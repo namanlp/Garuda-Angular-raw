@@ -1,0 +1,22 @@
+<h1 class="center"><strong>
+  Downloads
+</strong></h1>
+
+<div *ngFor="let distro of distros">
+  <h2 style="text-align: center;" *ngIf="distro.name === 'Barebones'">Advanced Users Only <i class="fa fa-warning" style="color: yellow;" ></i></h2>
+  <div class="dist">
+    <div class="distro">
+      <img [src]="'assets/download/'+distro.nic+'/garuda-'+distro.nic+'.webp'" [alt]="'Garuda Linux ' + distro.name" class="laptop" />
+      <div class="bottom"></div>
+    </div>
+    <div class="distdesc">
+      <h2>Garuda {{distro.name}}</h2>
+      <h5>{{distro.desc}}</h5></div></div>
+
+  <a class="downloadlinks" [routerLink]="distro.nic" style="color: black; background: white; width: 100%;height: 2rem;">
+    Download {{distro.name}} Edition
+<!--    <div class="drpdown">-->
+<!--      <button class="drpbtn">Download {{distro.name}} Edition <i class="fa fa-download" aria-hidden="true"></i></button>-->
+<!--    </div>-->
+  </a>
+</div>

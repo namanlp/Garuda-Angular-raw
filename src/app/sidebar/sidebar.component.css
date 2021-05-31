@@ -1,0 +1,90 @@
+.sidenav {
+  font-size                 : 1.25rem;
+  position                  : fixed;
+  left                      : 0;
+  top                       : 50vh;
+  margin-top                : -9rem;
+  border-radius             : 2px;
+  border-top-right-radius   : 20px;
+  border-bottom-right-radius: 20px;
+  z-index                   : 5;
+}
+
+.sidelinks {
+  z-index                   : 20;
+  padding                   : 0.75rem 0.5rem 0.75rem 0.2rem;
+  border                    : 3px solid;
+  border-left               : 2rem;
+  border-top-right-radius   : 32px;
+  border-bottom-right-radius: 32px;
+  background-color          : white;
+  text-decoration           : none;
+  color                     : inherit;
+  max-width                 : 6.25rem;
+  transition                : all 1s ease;
+  transform: translateX(-4rem);
+}
+.sidelinks:hover{
+  transform: translateX(0);
+}
+
+.sidedwn {
+  color    : black;
+  animation: rollup 1.25s 1;
+}
+
+.sidedwn:hover {
+  color           : white !important;
+  background-color: #000000 !important;
+}
+
+.sidegit {
+  color    : #fc6d26;
+  animation: rollup 1.55s 1;
+}
+
+.sidegit:hover {
+  color           : white !important;
+  background-color: #fc6d26 !important;
+}
+
+.sidetele {
+  color    : #0088cc !important;
+  animation: rollup 2s 1;
+}
+
+.sidetele:hover {
+  color           : white !important;
+  background-color: #0088cc !important;
+}
+
+.sidetwit {
+  color    : #00acee !important;
+  animation: rollup 2.3s 1;
+}
+
+.sidetwit:hover {
+  color           : white !important;
+  background-color: #00acee !important;
+}
+
+.sidefb {
+  color    : #0088cc !important;
+  animation: rollup 2.5s 1;
+}
+
+.sidefb:hover {
+  color           : white !important;
+  background-color: #0088cc !important;
+}
+
+.hidden {
+  display  : inline-block;
+  font-size: 0.8rem;
+  width    : 4rem;
+}
+
+.sidenav~* {
+  padding-left: 1.85rem;
+}
+

@@ -1,0 +1,142 @@
+ul.download {
+  font-weight  : 550;
+  margin       : 5rem 1rem 20vh 1rem;
+}
+
+ul.download li a {
+  color: dodgerblue;
+}
+
+.distintro {
+  width : 80%;
+  height: auto;
+  margin: auto;
+}
+
+ul.distros {
+  list-style-type: none;
+  margin-bottom  : 8rem;
+}
+
+.dist {
+  display       : flex;
+  flex-direction: row;
+  /* important for @media */
+  margin        : 4rem 0.5rem;
+}
+
+.distro {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-around;
+}
+
+h2 {
+  margin-top   : 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.laptop {
+  width        : 50vw;
+  height       : auto;
+  margin       : auto;
+  margin-bottom: 0 !important;
+  border       : 9px solid #ddd;
+  border-radius: 12px 12px 0 0;
+}
+
+.bottom {
+  width        : 60vw;
+  height       : 12px;
+  border-radius: 0 0 25px 25px;
+  border-top   : 5px solid white;
+  border-bottom: 1px solid black;
+  background   : #bbb;
+  z-index      : 1;
+  margin-top   : 0 !important;
+}
+
+.distdesc {
+  text-align: center;
+}
+
+
+.downloadlinks {
+  display        : flex;
+  justify-content: space-evenly;
+  width          : 100%;
+  margin-bottom  : 8rem;
+  flex-direction : row;
+  text-align     : center;
+}
+
+.drpdown,
+.popup-div {
+  position   : relative;
+  margin-left: 2%;
+
+}
+
+.drpdown {
+  margin: 0 1%;
+}
+
+.drpbtn,
+.popup-div>button {
+  outline         : none;
+  height          : 100%;
+  color           : white;
+  padding         : .8rem 1rem;
+  font-size       : 16px;
+  cursor          : pointer;
+  border          : none;
+  border-radius   : .3rem;
+  background-color: #f5000098;
+}
+
+.drpdown-content {
+  display : none;
+  position: absolute;
+  width   : 100%;
+}
+
+.drpdown-content a {
+  display: block;
+}
+
+.drpdown:hover>div {
+  z-index   : 4;
+  display   : block;
+  background: rgba(77, 75, 75, 1);
+  color     : white;
+  animation : rolldown 0.5s 1;
+}
+
+.dwnlinks:hover {
+  color: rgb(77, 159, 236);
+}
+
+.qtile {
+  margin-bottom: 10rem;
+}
+
+
+.sidenav~* {
+  padding-left: 2.5rem;
+}
+
+
+@media(max-width:999px) {
+  .dist {
+    flex-direction: column;
+  }
+
+  .laptop {
+    width: 80vw;
+  }
+
+  .bottom {
+    width: 92.5vw;
+  }
+}

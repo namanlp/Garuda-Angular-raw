@@ -1,0 +1,148 @@
+#who-are-we {
+  margin-top: 5%;
+  text-align: center;
+  position  : relative;
+}
+
+#who-are-we h3 {
+  display      : inline;
+  padding      : 1%;
+  border-radius: 1rem;
+  position     : relative;
+}
+
+#who-are-we>h3::after {
+  content         : '';
+  background-color: rgb(184, 171, 171);
+  position        : absolute;
+  top             : 90%;
+  left            : 5%;
+  width           : 92%;
+  height          : 3px;
+  border-radius   : 5px;
+  animation       : bottom-line 2s infinite alternate linear;
+}
+
+@keyframes bottom-line {
+  0% {
+    background-color: rgb(55, 112, 235);
+  }
+
+  100% {
+    background-color: rgb(212, 0, 255);
+  }
+}
+
+
+.team-grid {
+  display              : grid;
+  grid-template-columns: repeat(3,auto);
+  gap                  : 30px;
+  width                : 80%;
+  position             : relative;
+  left                 : 50%;
+  transform            : translateX(-50%);
+  margin-top           : 5%;
+  box-sizing           : content-box;
+}
+
+.grid-item {
+  text-align: center;
+  position  : relative;
+}
+
+.dp {
+  width    : 10vw;
+  height   : auto;
+  min-width: 200px;
+}
+
+.card {
+  position      : relative;
+  left          : 50%;
+  transform     : translateX(-50%);
+  display       : flex;
+  flex-direction: column;
+  height        : 100%;
+  width         : 80%;
+  padding       : 2%;
+  text-align    : center;
+  box-shadow    : 1px 1px 20px rgba(125, 125, 125, 0.747);
+  border-radius : 18px;
+  transition    : all 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: -2px -2px 5px 1px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
+}
+
+.dp-div {
+  min-height: 10rem;
+  max-height: 10rem;
+}
+
+.member-name {
+  height     : 4rem;
+  padding-top: 2%;
+}
+
+.about {
+  height            : 9rem;
+  padding           : 0 0 1% 0;
+  overflow-y        : scroll;
+  -ms-overflow-style: none;
+  scrollbar-width   : none;
+}
+
+.about::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1320px) {
+  .card {
+    width: 100%;
+  }
+
+  .team-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .about {
+    height: 8rem;
+  }
+}
+
+
+@media only screen and (max-width: 980px) {
+
+  .team-grid {
+    grid-template-columns: auto;
+    height               : 100%;
+  }
+
+  .about {
+    height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .dp-div {
+    min-height: 11rem;
+  }
+
+  .about {
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .card {
+    width: 100%;
+  }
+
+  .about {
+    height: 9rem;
+  }
+}

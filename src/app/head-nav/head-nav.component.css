@@ -1,0 +1,112 @@
+.navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 1.25rem;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 10vh;
+  min-height: 60px;
+  /* max-height: 200px; */
+  align-items: center;
+  border-bottom: 2px solid rgb(27, 170, 255);
+  z-index: 10;
+  width: 100%;
+}
+
+.navbtn {
+  color: rgba(180, 180, 180, 0.8);
+  text-decoration: none;
+  border: none;
+  padding: 0 0.75vw;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  height: 7vh;
+  transition: color 1s ease-out;
+  user-select: none;
+}
+
+.navbtn:hover, .current {
+  color: white;
+}
+
+#dropbtn:hover {
+  cursor: default;
+}
+
+.logo {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+   background: url("../../assets/home/garudalinux2.png") center center/cover;
+  margin-right: 2vw;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  padding: 2vh 0.5vw;
+  color: rgba(180, 180, 180, 0.8);
+  font-size: 1rem;
+  border-bottom: 0.2px solid rgba(180, 180, 180, 0.25);
+  transition: all 1s ease-out;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.dropdown:hover .navbtn {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  right: 0;
+  padding-top: 2vh;
+  margin-top: -2vh;
+  animation: rolldown 0.4s 1;
+}
+
+
+@media screen and (max-width: 549px) {
+
+  .navbar {
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    height: 14vh;
+    min-height: 85px;
+    flex-direction: column;
+  }
+  .navbtn {
+    user-select: none;
+    padding: 0 0.8vw;
+    font-size: 0.82rem;
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 724px) and (min-width: 550px) {
+  .navbar {
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    height: 14vh;
+    min-height: 85px;
+    flex-direction: column;
+  }
+
+  .navbtn {
+    padding: 0 0.8vw;
+    font-size: 0.82rem;
+    height: 5vh;
+  }
+}
