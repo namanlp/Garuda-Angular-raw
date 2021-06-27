@@ -5,7 +5,7 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.55);
   height: 10vh;
   min-height: 60px;
   /* max-height: 200px; */

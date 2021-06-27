@@ -4,9 +4,6 @@
   left                      : 0;
   top                       : 50vh;
   margin-top                : -9rem;
-  border-radius             : 2px;
-  border-top-right-radius   : 20px;
-  border-bottom-right-radius: 20px;
   z-index                   : 5;
 }
 

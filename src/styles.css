@@ -28,5 +28,15 @@ a {
 }
 
 .blur{
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  opacity: 1;
+  transition: backdrop-filter 1s, opacity 1s;
+}
+
+.blur:hover{
+  backdrop-filter: blur(50px);
+}
+
+.center{
+  margin: auto;
 }
