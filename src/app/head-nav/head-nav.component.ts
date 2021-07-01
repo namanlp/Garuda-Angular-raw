@@ -11,5 +11,14 @@ export class HeadNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  scrollToTop() {
+    (function smoothScroll() {
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothScroll);
+        window.scroll(0, currentScroll - (currentScroll / 2));
+      }
+    })();
+  }
 
 }

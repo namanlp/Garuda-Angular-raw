@@ -9,10 +9,11 @@ import {Distro} from "./distro.model";
 })
 
 export class HomeComponent implements OnInit {
+
   public constructor(private titleService: Title) { }
   ngOnInit(){
     this.titleService.setTitle("Garuda Linux | Downloads")
-  }
+  };
 
   distros : Distro[] =[
     new Distro( 'KDE Dr460nized', 'dr460nized',
@@ -36,4 +37,15 @@ export class HomeComponent implements OnInit {
     new Distro( 'Barebones', 'barebones',
       'Garuda Linux Barebones is made for users who do not want extra software and functionalities and complain about bloat. It contains only the bare minimum of packages needed to get started. (You are on your own, we dont provide any support for Barebones editions!)',),
   ];
+
+  scrollToTop() {
+    (function smoothScroll() {
+      var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothScroll);
+        window.scroll(0, currentScroll - (currentScroll / 2));
+      }
+    })();
+  }
+
 }

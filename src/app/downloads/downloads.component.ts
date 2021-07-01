@@ -9,6 +9,7 @@ import {Meta, Title} from "@angular/platform-browser";
 export class DownloadsComponent implements OnInit {
   public constructor(private titleService: Title, private metaService: Meta) { }
 
+
   ngOnInit(){
     this.titleService.setTitle("Garuda Linux | Downloads")
     this.metaService.addTags([

@@ -132,7 +132,7 @@
 }
 
 .main-grid-div button {
-  box-shadow        : -1.75px -1.75px 4px 0.75px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
+  box-shadow        : -1.75px -1.75px 4px 1px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
   border-image      : linear-gradient(to bottom right, palevioletred, rgb(55, 55, 235)) 1;
   background-color  : black;
   color             : white;
@@ -292,7 +292,7 @@
     padding-top: 10%;
   }
   .grid-items {
-    box-shadow: -1.75px -1.75px 4px 0.75px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
+    box-shadow: -1.75px -1.75px 4px 1px palevioletred, 2px 2px 5px 1px rgb(55, 55, 235);
     padding: 3%;
   }
   .grid-items2 {

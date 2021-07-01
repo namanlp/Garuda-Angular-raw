@@ -1,5 +1,61 @@
+<h1 style="margin-top:2rem;margin-bottom:-2rem" class="center"><strong>
+  Please Read
+</strong></h1> <br>
+
+<div class="translate center">
+  <div id="google_translate_element" style="display: inline;"></div>
+  <!--      <script type="text/javascript">-->
+  <!--        function googleTranslateElementInit() {-->
+  <!--          new google.translate.TranslateElement({-->
+  <!--            pageLanguage: 'en'-->
+  <!--          }, 'google_translate_element');-->
+  <!--        }-->
+  <!--      </script>-->
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+
+<div class="requirement-div">
+  <div class="minimum-req-div req">
+    <h2 class="center">Minimum requirements</h2>
+    <div class="req-lists">
+      <div>30 GB storage space</div>
+      <div>4 GB RAM</div>
+      <div>64-bit system</div>
+
+    </div>
+  </div>
+  <div class="recommended-req-div req">
+    <h2>Recommended requirements</h2>
+    <div class="req-lists">
+      <ul>
+        <li>40 GB storage space</li>
+        <li>8 GB RAM</li>
+        <li>Video card with OpenGL 3.3 or better</li><br>
+        <li><strong>Our distro is optimized for performance on real hardware. Installing in virtual machines is not recommended as it might result in a bad experience!</strong></li>
+        <li>We sacrifice extra RAM to improve the responsiveness of the system.</li>
+        <li>We believe in the principle "unused RAM is wasted RAM".</li>
+        <li><a href="https://www.linuxatemyram.com/">More information on some common myths concerning RAM usage</a> <i class="fa fa-link link-icon" aria-hidden="true"></i></li>
+        <li><a href="https://www.youtube.com/watch?v=JYsL5J5vVC4">If you want to know how to install & setup Garuda Linux watch this short tutorial</a> <i class="fa fa-link  link-icon" aria-hidden="true"></i></li>
+        <li>We do not recommend the usage of Snap or Flatpak for software installation.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="login-details req">
+    <h2>Live session login details </h2>
+    <ul class="req-lists">
+      <li>Username: garuda </li>
+      <li>Password: garuda </li>
+    </ul>
+  </div>
+</div><br><br>
+
+<h1 class="center"><strong>
+  Downloads
+</strong></h1>
+
 <div *ngFor="let distro of distros">
-  <h2 style="text-align: center;" *ngIf="distro.name === 'Barebones'">Advanced Users Only <i class="fa fa-warning" style="color: yellow;" ></i></h2>
+  <h2 class="center" *ngIf="distro.name === 'Barebones'" >Advanced Users Only <i class="fa fa-warning" style="color: yellow;" ></i></h2>
   <div class="dist">
     <div class="distro">
       <img [src]="'assets/download/'+distro.nic+'/garuda-'+distro.nic+'.webp'" [alt]="'Garuda Linux ' + distro.name" class="laptop" />
@@ -9,10 +65,11 @@
       <h2>Garuda {{distro.name}}</h2>
       <h5>{{distro.desc}}</h5></div></div>
 
-  <a class="downloadlinks" [routerLink]="distro.nic" style="color: black; background: white; width: 100%;height: 2rem;">
+  <a class="downloadlinks" [routerLink]="distro.nic" style="color: black; background: white; width: 100%;height: 2rem;" (click)="scrollToTop()">
     Download {{distro.name}} Edition
 <!--    <div class="drpdown">-->
 <!--      <button class="drpbtn">Download {{distro.name}} Edition <i class="fa fa-download" aria-hidden="true"></i></button>-->
 <!--    </div>-->
   </a>
 </div>
+
